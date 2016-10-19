@@ -33,7 +33,11 @@
                                                                     options:0
                                                                     metrics:nil
                                                                       views:@{@"codeLabel": codeLabel}];
-    NSArray *vConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[storyBoardLabel]-[codeLabel]" options:0 metrics:nil views:@{@"storyBoardLabel": _storyBoardLabel, @"codeLabel": codeLabel}];
+    NSArray *vConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[storyBoardLabel]-[codeLabel]"
+                                                                    options:0
+                                                                    metrics:nil
+                                                                      views:@{@"storyBoardLabel": _storyBoardLabel,
+                                                                              @"codeLabel": codeLabel}];
     [[self view] addConstraints:hConstraints];
     [[self view] addConstraints:vConstraints];
 }
