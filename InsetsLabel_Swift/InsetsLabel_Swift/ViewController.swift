@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         codeLabel.text = "\"Communist Party of China Constitution\" said: The Chinese Communist Party is the vanguard of the working class, while the Chinese people and the vanguard of the Chinese nation is the cause of socialism with Chinese characteristics, the core of leadership, on behalf of the development requirements of China's advanced productive forces, on behalf of China's advanced culture the way forward, on behalf of the Chinese people's fundamental interests. The party's highest ideal and ultimate goal is to realize communism. Communist Party of China takes Marxism-Leninism, Mao Zedong Thought, Deng Xiaoping Theory and \"Three Represents\" as its guide to action. Communist Party of China in the primary stage of socialism's basic line is: to lead and unite people of all nationalities to economic construction, the four cardinal principles of reform and opening, self-reliance, hard work and strive to build China into a prosperous, democratic, civilized and harmonious modern socialist country of the party."
         view.addSubview(codeLabel)
         
-        let constraintH = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[view]-0-|",
+        let constraintH = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[codeLabel]-0-|",
                                                          options: NSLayoutFormatOptions(),
                                                          metrics: nil,
-                                                         views: ["view":codeLabel])
+                                                         views: ["codeLabel":codeLabel])
         let constraintV = NSLayoutConstraint.constraints(withVisualFormat: "V:[storyBoardLabel]-[codeLabel]",
                                                          options: NSLayoutFormatOptions(),
                                                          metrics: nil,

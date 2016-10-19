@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InsetsLabel_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSa-yH-EkZ" customClass="InsetsLabel" customModule="InsetsLabel_Swift" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTj-v0-b31" customClass="InsetsLabel">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">无产阶级政党的党章是以马克思主义党的学说为指导，结合党的建设的实践而制定的党的生活准则和行为规范，是加强党的建设的强有力的武器。中国共产党的党章反映党的学说发展状况，反映革命、建设和改革事业发展的进程，反映党的建设成熟的程度。研究党章的产生和发展，可以深入地了解马克思主义建党学说的发展，更好地总结党的建设的经验教训，加强党的建设，推动革命、建设和改革事业不断向前发展。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -42,13 +42,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SSa-yH-EkZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VpJ-0i-96Q"/>
-                            <constraint firstItem="SSa-yH-EkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dq3-Ya-4Aa"/>
-                            <constraint firstAttribute="trailing" secondItem="SSa-yH-EkZ" secondAttribute="trailing" id="uII-jU-N01"/>
+                            <constraint firstItem="DTj-v0-b31" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="68r-cu-njF"/>
+                            <constraint firstAttribute="trailing" secondItem="DTj-v0-b31" secondAttribute="trailing" id="GNO-3J-9sJ"/>
+                            <constraint firstItem="DTj-v0-b31" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZKT-Dd-R0j"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="storyBoardLabel" destination="SSa-yH-EkZ" id="oe9-RL-wZU"/>
+                        <outlet property="storyBoardLabel" destination="DTj-v0-b31" id="Hrj-nC-CEM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
