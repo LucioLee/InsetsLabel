@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,15 +14,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InsetsLabel_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSa-yH-EkZ" customClass="InsetsLabel" customModule="InsetsLabel_Swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="172"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">无产阶级政党的党章是以马克思主义党的学说为指导，结合党的建设的实践而制定的党的生活准则和行为规范，是加强党的建设的强有力的武器。中国共产党的党章反映党的学说发展状况，反映革命、建设和改革事业发展的进程，反映党的建设成熟的程度。研究党章的产生和发展，可以深入地了解马克思主义建党学说的发展，更好地总结党的建设的经验教训，加强党的建设，推动革命、建设和改革事业不断向前发展。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -42,10 +43,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SSa-yH-EkZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VpJ-0i-96Q"/>
-                            <constraint firstItem="SSa-yH-EkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dq3-Ya-4Aa"/>
-                            <constraint firstAttribute="trailing" secondItem="SSa-yH-EkZ" secondAttribute="trailing" id="uII-jU-N01"/>
+                            <constraint firstItem="SSa-yH-EkZ" firstAttribute="top" secondItem="dK6-Db-WdJ" secondAttribute="top" id="VpJ-0i-96Q"/>
+                            <constraint firstItem="SSa-yH-EkZ" firstAttribute="leading" secondItem="dK6-Db-WdJ" secondAttribute="leading" id="dq3-Ya-4Aa"/>
+                            <constraint firstItem="dK6-Db-WdJ" firstAttribute="trailing" secondItem="SSa-yH-EkZ" secondAttribute="trailing" id="uII-jU-N01"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="dK6-Db-WdJ"/>
                     </view>
                     <connections>
                         <outlet property="storyBoardLabel" destination="SSa-yH-EkZ" id="oe9-RL-wZU"/>
