@@ -10,7 +10,11 @@ import UIKit
 
 @IBDesignable open class InsetsLabel: UILabel {
     
-    open var insets = UIEdgeInsets.zero
+    open var insets = UIEdgeInsets.zero {
+        didSet {
+            self.invalidateIntrinsicContentSize()
+        }
+    }
     
     @IBInspectable open var topInset: CGFloat {
         set {

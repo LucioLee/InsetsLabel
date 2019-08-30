@@ -40,6 +40,7 @@
                                                                               @"codeLabel": codeLabel}];
     [[self view] addConstraints:hConstraints];
     [[self view] addConstraints:vConstraints];
+    
 }
 
 

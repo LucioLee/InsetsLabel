@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface InsetsLabel : UILabel
     
 @property (nonatomic, assign) UIEdgeInsets insets;
@@ -20,3 +21,4 @@
 - (instancetype)initWithFrame:(CGRect)frame insets:(UIEdgeInsets)insets;
 
 @end
+NS_ASSUME_NONNULL_END
